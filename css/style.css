@@ -1,0 +1,6 @@
+table tbody tr:last-child td {
+  border-bottom: none;
+}
+.table tbody tr {
+  height: 50px;
+}

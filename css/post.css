@@ -1,0 +1,27 @@
+.table tbody tr {
+  height: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .custom-table tr {
+    position: relative;
+  }
+
+  .custom-table a {
+    padding-bottom: 27px;
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .custom-table a i {
+    position: absolute;
+    top: 33px;
+    right: 60px;
+    font-size: 12px;
+  }
+
+  .custom-table a span {
+    position: relative;
+    right: -4px;
+  }
+}

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <title>add post</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
+      <div class="container text-white">
+        <button
+          class="navbar-toggler me-auto ms-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand me-auto" href="#">Blogen</a>
+
+        <div class="collapse navbar-collapse me-auto" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./dashboard.html"
+                >Dashboard</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./posts.html">Posts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./categories.html">Categories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./users.html">Users</a>
+            </li>
+          </ul>
+          <!-- left -->
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                href="#"
+              >
+                <i class="fa-solid fa-user fa-xs"></i> Welcome Iqbal</a
+              >
+              <div class="dropdown-menu">
+                <a href="profile.html" class="dropdown-item">
+                  <i class="fa-solid fa-user"></i> Profile</a
+                >
+                <a href="setting.html" class="dropdown-item">
+                  <i class="fa fa-gear"></i> Setting</a
+                >
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./logout.html">
+                <i class="fa fa-user-times"></i>Logout</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- header -->
+    <header id="post" class="bg-primary py-2">
+      <div class="container text-white">
+        <div class="row">
+          <div class="col-lg-6">
+            <h1>Post One</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- hader end -->
+    <section id="action" class="mb-4 py-4 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 me-auto">
+            <a
+              href="./dashboard.html"
+              class="btn btn-light btn-lg rounded-1 d-block"
+            >
+              <i class="fa-solid fa-arrow-left"></i> Back to Dashboard</a
+            >
+          </div>
+          <div class="col-md-3">
+            <a href="#" class="btn btn-success btn-lg px-3 rounded-1 d-block">
+              <i class="fa-solid fa-check"></i> Save Changes</a
+            >
+          </div>
+          <div class="col-md-3">
+            <a
+              href="#"
+              class="btn btn-danger btn-block btn-lg rounded-1 d-block"
+            >
+              <i class="fa-solid fa-xmark"></i> Delete Post
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ..... -->
+
+    <!-- mid dection -->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-header">
+              <h4>Edit Post</h4>
+            </div>
+            <div class="card-body">
+              <form>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Title</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    aria-describedby="emailHelp"
+                    placeholder="Post One"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="Select" class="form-label">Category</label>
+                  <select id="Select" class="form-select">
+                    <option class="selected">Web Development</option>
+                    <option>Tech Gadegts</option>
+                    <option>Business</option>
+                    <option>Health and Wellness</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="file">Upload Image</label>
+                  <input type="file" class="form-control-file d-block my-2" />
+                  <p>Max Size 3Mb</p>
+                </div>
+                <div class="mb-3">
+                  <label class="mb-2">Body</label>
+                  <textarea name="editor1" class="form-control">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Expedita unde incidunt corporis facere dolore ea vitae impedit, inventore, dolor adipisci quam,
+                     illum optio iure autem qui voluptate harum, doloremque. Reiciendis.
+                  </textarea>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- mid dection -->
+
+    <!-- footer-->
+    <section class="footer text-white bg-dark mt-4 p-3">
+      <div class="container text-center">
+        <p class="lead">Copyright &copy; 2018 Blogen</p>
+      </div>
+    </section>
+    <!-- footer-->
+    <script src="https://cdn.ckeditor.com/4.15.1/standard/ckeditor.js"></script>
+    <script>
+      CKEDITOR.replace("editor1");
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
